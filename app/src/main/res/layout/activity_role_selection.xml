@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/role_selection_title"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Button and description for Lector -->
+    <Button
+        android:id="@+id/btnGoLector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/role_lector_button"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/role_lector_description"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+    <!-- Button and description for Investigator -->
+    <Button
+        android:id="@+id/btnGoInvestigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/role_investigator_button"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/role_investigator_description"
+        android:textSize="16sp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+</LinearLayout>

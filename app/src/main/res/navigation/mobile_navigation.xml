@@ -1,0 +1,43 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.forever3.proyectofinal.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+
+        <!-- Aquí agregamos la acción hacia el fragmento de detalles -->
+        <action
+            android:id="@+id/action_homeFragment_to_detallesInvestigacionFragment"
+            app:destination="@id/detallesInvestigacionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.forever3.proyectofinal.ui.addInvestigation.agregarInvestigacionFragment"
+        android:label="@string/title_add"
+        tools:layout="@layout/fragment_add_investigation" />
+
+    <fragment
+        android:id="@+id/navigation_about_us"
+        android:name="com.forever3.proyectofinal.ui.about_us.About_usFragment"
+        android:label="@string/title_about_us"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/navigation_logout"
+        android:name="com.forever3.proyectofinal.ui.logout.logoutFragment"
+        android:label="@string/title_logout"
+        tools:layout="@layout/fragment_logout" />
+
+    <!-- Fragmento de detallesInvestigacionFragment -->
+    <fragment
+        android:id="@+id/detallesInvestigacionFragment"
+        android:name="com.forever3.proyectofinal.ui.home.detallesInvestigacionFragment"
+        android:label="Detalles de Investigación"
+        tools:layout="@layout/fragment_detalles_investigacion" />
+</navigation>

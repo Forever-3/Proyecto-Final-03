@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_add">add</string>
+    <string name="title_about_us">about us</string>
+    <string name="title_logout">logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="app_title">Lista de Investigaciones</string>
+
+    <!--parte de la guia-->
+
+    <string name="imagen_de_categoria">Imagen del Categoría</string>
+
+    <!-- Login and signup activity -->
+    <string name="title_activity_login">Validando usuario</string>
+    <string name="title_activity_signup">Registrando usuario</string>
+    <string name="title_activity_main">Lista de Categorías</string>
+
+    <string name="prompt_name">Nombre</string>
+    <string name="prompt_email">Correo electrónico</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="prompt_password_confirm">Confirmar contraseña</string>
+    <string name="prompt_registerhere">Registrate aquí</string>
+    <string name="prompt_register">Registrarse</string>
+    <string name="prompt_login">Ingresar</string>
+
+
+    <!--Proyecto anterior, actualizar los strings-->
+
+
+    <!-- LoginActivity -->
+    <!-- Login screen -->
+    <string name="login_title_activity">Iniciar sesión</string>
+    <string name="login_email">Correo Electrónico</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_button">Iniciar Sesión</string>
+    <string name="google_login_button">Iniciar sesión con Google</string>
+    <string name="register_button">¿No tienes cuenta? Regístrate</string>
+
+    <!-- Error Messages -->
+    <string name="error_invalid_credentials">Rellenar todos los campos. Intenta de nuevo.</string>
+
+    <!-- RoleSelectionActivity -->
+    <!-- Role selection screen -->
+    <string name="role_selection_title">Selecciona tu rol</string>
+    <string name="role_lector_button">Registrarse como Lector</string>
+    <string name="role_investigator_button">Registrarse como Investigador</string>
+
+    <!-- Instructions -->
+    <string name="role_lector_description">Registrarte como Lector te permitirá ver investigaciones, comentar y valorar.</string>
+    <string name="role_investigator_description">Registrarte como Investigador te permitirá publicar investigaciones realizadas y ver comentarios.</string>
+
+    <!-- RegisterLectorActivity -->
+    <!-- Register as Lector -->
+    <string name="title_activity_lector">Registrarse como Lector</string>
+    <string name="lector_name">Nombre Completo</string>
+    <string name="lector_email">Correo Electrónico</string>
+    <string name="lector_password">Contraseña</string>
+    <string name="lector_confirm_password">Confirmar Contraseña</string>
+
+    <!-- Profile picture(ver que se puede hacer con esto) -->
+    <string name="lector_picture_label">Foto de Perfil</string>
+    <string name="lector_picture_button">Seleccionar Foto</string>
+
+    <!-- Register button -->
+    <string name="lector_register_button">Registrarse</string>
+    <string name="lector_register_with_google_button">Registrarse con Google</string>
+
+    <!-- Validation -->
+    <string name="password_mismatch_error">Las contraseñas no coinciden.</string>
+    <string name="profile_picture_error">Por favor, selecciona una foto de perfil.</string>
+    <string name="registration_success">¡Registro exitoso! nos vamos pa login</string>
+
+    <!-- RegisterInvestigatorActivity -->
+    <!-- Register as Investigador -->
+    <string name="investigator_register_title">Registrarse como Investigador</string>
+    <string name="investigator_name">Nombre Completo</string>
+    <string name="investigator_email">Correo Electrónico</string>
+    <string name="investigator_password">Contraseña</string>
+    <string name="investigator_confirm_password">Confirmar Contraseña</string>
+
+    <!-- Grade & Description -->
+    <string name="investigator_grade">Grado Académico</string>
+    <string name="investigator_description">Descripción breve de quién eres</string>
+
+    <!-- Register button -->
+    <string name="investigator_register_button">Registrarse</string>
+    <string name="investigator_register_with_google_button">Registrarse con Google</string>
+
+    <!-- Validation -->
+    <string name="investigator_password_mismatch_error">Las contraseñas no coinciden.</string>
+    <string name="investigator_registration_success">¡Registro exitoso! Redirigiendo a login...</string>
+
+
+    <string-array name="investigator_grades">
+        <item>Selecciona tu grado</item>
+        <item>1°Grado </item>
+        <item>2°Grado</item>
+        <item>3°Grado</item>
+        <item>4°Grado</item>
+    </string-array>
+
+
+</resources>
