@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la investigación -->
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:inputType="text" />
+
+    <!-- Spinner para la categoría -->
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Descripción -->
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:inputType="text" />
+
+    <!-- Conclusión -->
+    <EditText
+        android:id="@+id/etConclusion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Conclusión"
+        android:inputType="text" />
+
+    <!-- Recomendaciones -->
+    <EditText
+        android:id="@+id/etRecomendaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recomendaciones"
+        android:inputType="text" />
+
+    <!-- EditText para mostrar la URL del PDF -->
+    <EditText
+        android:id="@+id/etPdfUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PDF URL"
+        android:inputType="text"
+        android:focusable="false" />
+
+    <!-- Botón para seleccionar el archivo PDF -->
+    <Button
+        android:id="@+id/btnSeleccionarPDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Seleccionar PDF" />
+
+    <!-- Botón para guardar la investigación -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Guardar Investigación" />
+
+</LinearLayout>

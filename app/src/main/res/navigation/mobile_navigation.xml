@@ -4,44 +4,59 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
 
+    <!-- Fragmento de inicio -->
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.forever3.proyectofinal.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home">
 
-        <!-- Aquí agregamos la acción hacia el fragmento de detalles -->
+        <!-- Acción hacia el fragmento de detalles -->
         <action
             android:id="@+id/action_homeFragment_to_detallesInvestigacionFragment"
             app:destination="@id/detallesInvestigacionFragment" />
+
+        <!-- Acción opcional hacia el fragmento de agregar investigación -->
+        <action
+            android:id="@+id/action_homeFragment_to_agregarInvestigacionFragment"
+            app:destination="@id/navigation_add" />
     </fragment>
 
+    <!-- Fragmento para agregar investigación -->
     <fragment
         android:id="@+id/navigation_add"
-        android:name="com.forever3.proyectofinal.ui.addInvestigation.agregarInvestigacionFragment"
+        android:name="com.forever3.proyectofinal.ui.addInvestigation.AgregarInvestigacionFragment"
         android:label="@string/title_add"
-        tools:layout="@layout/fragment_add_investigation" />
+        tools:layout="@layout/fragment_agregar_investigacion">
 
+        <!-- Acción opcional para volver al inicio después de guardar -->
+        <action
+            android:id="@+id/action_agregarInvestigacionFragment_to_homeFragment"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <!-- Fragmento "Acerca de nosotros" -->
     <fragment
         android:id="@+id/navigation_about_us"
         android:name="com.forever3.proyectofinal.ui.about_us.About_usFragment"
         android:label="@string/title_about_us"
         tools:layout="@layout/fragment_about_us" />
 
+    <!-- Fragmento de cerrar sesión -->
     <fragment
         android:id="@+id/navigation_logout"
         android:name="com.forever3.proyectofinal.ui.logout.logoutFragment"
         android:label="@string/title_logout"
         tools:layout="@layout/fragment_logout" />
 
-    <!-- Fragmento de detallesInvestigacionFragment con su argumento -->
+    <!-- Fragmento para mostrar los detalles de una investigación -->
     <fragment
         android:id="@+id/detallesInvestigacionFragment"
         android:name="com.forever3.proyectofinal.ui.home.detallesInvestigacionFragment"
         android:label="Detalles de Investigación"
         tools:layout="@layout/fragment_detalles_investigacion">
 
-        <!-- Definimos el argumento que recibirá este fragmento -->
+        <!-- Argumento necesario para los detalles -->
         <argument
             android:name="investigacion"
             app:argType="com.forever3.proyectofinal.ui.home.cls_Investigacion" />

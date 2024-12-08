@@ -32,7 +32,6 @@
         <activity
             android:name=".ui.users.LoginActivity"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
