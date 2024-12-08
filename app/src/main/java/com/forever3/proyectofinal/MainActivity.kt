@@ -17,6 +17,8 @@ import com.forever3.proyectofinal.ui.users.LoginActivity
 
 const val valorIntentLogin = 1
 
+//comentando para que se vea en el main
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
