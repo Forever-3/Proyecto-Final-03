@@ -70,5 +70,4 @@ class HomeFragment : Fragment() {
             .actionHomeFragmentToDetallesInvestigacionFragment(investigacion)
         findNavController().navigate(action)
     }
-
 }

@@ -34,10 +34,16 @@
         android:label="@string/title_logout"
         tools:layout="@layout/fragment_logout" />
 
-    <!-- Fragmento de detallesInvestigacionFragment -->
+    <!-- Fragmento de detallesInvestigacionFragment con su argumento -->
     <fragment
         android:id="@+id/detallesInvestigacionFragment"
         android:name="com.forever3.proyectofinal.ui.home.detallesInvestigacionFragment"
         android:label="Detalles de Investigación"
-        tools:layout="@layout/fragment_detalles_investigacion" />
+        tools:layout="@layout/fragment_detalles_investigacion">
+
+        <!-- Definimos el argumento que recibirá este fragmento -->
+        <argument
+            android:name="investigacion"
+            app:argType="com.forever3.proyectofinal.ui.home.cls_Investigacion" />
+    </fragment>
 </navigation>
