@@ -7,10 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.forever3.proyectofinal.R
-import com.forever3.proyectofinal.ui.home.cls_Investigacion  // Asegúrate de que el modelo esté en el paquete correcto
 
 class detallesInvestigacionFragment : Fragment() {
-
+//hola
     // Vistas para mostrar los detalles
     private lateinit var tvTitulo: TextView
     private lateinit var tvCategoria: TextView
