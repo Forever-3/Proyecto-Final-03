@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.logout.logoutFragment">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Botón para cerrar sesión -->
+    <Button
+        android:id="@+id/btnLogout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/title_logout" />
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:layout_marginBottom="16dp" />
 
-</FrameLayout>
+    <!-- Imagen de la carita triste debajo del botón -->
+    <ImageView
+        android:id="@+id/imgSadFace"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_gatosad_foreground"
+        android:layout_gravity="center"
+        android:contentDescription="Carita triste" />
+
+</LinearLayout>
