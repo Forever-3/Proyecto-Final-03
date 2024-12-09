@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.forever3.proyectofinal.R
+import android.content.Intent
+import android.net.Uri
+import android.widget.Button
 
 class detallesInvestigacionFragment : Fragment() {
 
@@ -19,6 +22,8 @@ class detallesInvestigacionFragment : Fragment() {
     private lateinit var tvRecomendaciones: TextView
     private lateinit var tvConclusion: TextView
     private lateinit var rvImagenes: RecyclerView
+    private lateinit var btnDescargarPDF: Button
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +38,8 @@ class detallesInvestigacionFragment : Fragment() {
         tvRecomendaciones = view.findViewById(R.id.tvRecomendaciones)
         tvConclusion = view.findViewById(R.id.tvConclusion)
         rvImagenes = view.findViewById(R.id.rvImagenes)
+        btnDescargarPDF = view.findViewById(R.id.btnDescargarPDF)
+
 
         // Obtener los datos pasados a través del bundle
         val investigacion = arguments?.getParcelable<cls_Investigacion>("investigacion")
@@ -51,9 +58,21 @@ class detallesInvestigacionFragment : Fragment() {
 
             // Aquí pasamos el contexto junto con la lista de imágenes
             rvImagenes.adapter = ImagenesAdapter(requireContext(), it.imagenes)
+
+            // Configurar el botón de descarga
+            btnDescargarPDF.setOnClickListener {
+                descargarPdf(investigacion.pdfUrl)
+            }
+
         }
 
         return view
+    }
+
+    private fun descargarPdf(pdfUrl: String) {
+        // Abrir el navegador para descargar el PDF
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(pdfUrl))
+        startActivity(intent)
     }
 
     companion object {
