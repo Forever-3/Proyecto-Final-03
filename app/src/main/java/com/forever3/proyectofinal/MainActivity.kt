@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun obtenerDatos() {
         // Función de ejemplo para realizar alguna operación
-        Toast.makeText(this, "Esperando hacer algo importante", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Bienvenido", Toast.LENGTH_LONG).show()
     }
 
     private fun redirectToLogin() {
